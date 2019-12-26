@@ -1,0 +1,873 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none
+
+}
+
+
+h1 { font-family: Muli; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; } h3 { font-family: Muli; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } p { font-family: Muli; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } blockquote { font-family: Muli; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } pre { font-family: Muli; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px; }
+
+
+body {
+	background-color: #F7F7F7;
+	font-family: Muli;
+}
+
+.container {
+	max-width: 1400px;
+	margin: 0 auto;
+	text-align: center;
+	/*border: 1px solid grey*/
+}
+
+.container-logo {
+	max-width: 1400px;
+	margin: 0 auto;
+
+}
+
+/* START HEADER */
+
+.header-background {
+	background-image: url("img.jpg");
+	width:100%;
+	height:auto;
+	height: 400px;
+	overflow: hidden;
+}
+.logo {
+
+	position: absolute;
+	
+
+}
+
+.text-inside {
+	margin-top:10px;
+	color: white;
+	text-align: center;
+	display: block;
+
+	
+}
+
+.text-inside h2 {
+	margin-top: 82px;
+	font-size: xx-large;
+	font-weight: bold;
+}
+
+.text-inside h4 {
+	font-weight: normal
+}
+
+.search-input {
+	text-align: center;
+	margin: 40px auto;
+	width: 50%;
+	padding:10px;
+	color: black
+}
+
+.search-input input[type="text"]{
+	margin: auto;
+	display: block;
+	width: 60%;
+	height: 40px;
+	border-radius: 50px;
+	border:unset;
+	
+	opacity: 0.6;
+	box-sizing: border-box;
+    padding-left: 20px;
+    box-shadow: 2px 2px 8px #0000009c;
+    transition: height 0.5s
+}
+
+
+.search-input input[type="text"]::placeholder {
+	font-size: medium;
+	padding-right: 5px;
+	font-size: 15px;
+}
+
+
+.search-input input:focus {
+	background-color:black;
+	color: white;
+	font-size: 15px;
+	outline:none;
+	height: 45px;
+	transition: all 0.5s;
+	box-shadow: 3px 3px 10px #0000009c;
+
+
+}
+.search-input h5 {
+	font-size: x-small;
+	margin-top: 12px;
+	font-style: italic;
+	color:#ffffff99;
+}
+
+/* END HEADER */
+
+/* START SECTION */
+
+
+section .intro {
+	margin: 0 auto;
+	margin-top: 50px;
+	text-align: center
+}
+
+section .intro h3 {
+	font-size: medium;
+	color: #AD277C;
+	font-weight: bold;
+}
+
+
+section .intro-title {
+	width: 50%;
+	margin: 0 auto;
+	margin-top: 50px;
+	text-align: center;
+	font-size: x-large;
+}
+
+section .intro-description {
+	width: 50%;
+	margin: 0 auto;
+	margin-top: 30px;
+	text-align: center;
+	color:#5F5552;
+	font-size: small
+}
+
+section .menu-list ul {
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 60px;
+	text-align: center
+}
+section .menu-list ul li {
+	display: inline-block;
+	padding: 10px;
+	font-weight: bold;
+	margin-right: 10px;
+	font-family: Quicksand
+}
+
+section .menu-list ul li a {
+	text-decoration: none;
+	color: black
+}
+
+section .menu-list ul li a:hover {
+	color: #00BDA6;
+}
+section .menu-list ul li a#isActive {
+	color: #00BDA6;
+
+}
+
+
+.cards {
+
+	display: inline-block;
+	text-align: center;
+	margin-top:20px;
+}
+
+.cards .card {
+	display: inline-block;
+	width: 272px;
+	margin: 4px;
+	height: auto;
+	text-align: center;
+	border-radius: 8px
+	/*box-shadow: 0 0 10px 0 rgba(0,0,0, .25);*/
+	
+}
+
+.card:hover {
+	box-shadow: 0 0 2px grey
+}
+
+.card img {
+	width: 100%;
+	height: auto;
+	border-radius: 8px;
+	/*box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.05);*/
+}
+
+.card .card-title {
+	padding: 10px;
+	text-align: center;
+	color: #0e0e0ee0;
+}
+
+.btn {
+	margin: auto;
+	margin-top: 50px;
+}
+
+
+.button-viewmore {
+	
+	padding: 20px;
+	background-color: #3E236B;
+	width: 10%;
+	color: white;
+	border-radius: 5px
+}
+
+.btn a:hover {
+	box-shadow: 0 0 15px grey;
+	transition: 0.5s
+}
+/* END SECTION */
+
+/* START FOOTER */
+
+footer {
+	background-color: black;
+	margin-top: 120px;
+	padding: 20px;
+	color: #888888;
+	text-align: left;
+	font-size: small;
+	bottom: 0
+}
+
+/* END FOOTER */
+
+
+
+
+
+
+
+/* ///////////////QuizList////////////////// */
+
+
+/* START NAVBAR */
+
+.navbar {
+	text-align: left;
+}
+
+.navbar input[type="text"] {
+	margin: 10px auto;
+	display: block;
+	width: 30%;
+	height: 34px;
+	border-radius: 50px;
+	border:unset;
+	opacity: 0.6;
+    padding-left: 20px;
+    box-shadow: 2px 2px 8px #0000009c;
+    outline: none;
+}
+
+.navbar input[type="text"]:focus {
+	background-color:black;
+	color: white;
+	font-size: 15px;
+	transition: all 0.5s;
+}
+
+.navbar img {
+	position: absolute;
+}
+
+/* END NAVBAR */
+
+/* START DESCRIPTON SECTION */
+
+.intro-domain {
+	float: left;
+	margin: 20px;
+}
+
+.intro-domain-description {
+	width: 50%;
+	margin: 45px auto 70px auto;
+	color:#5F5552;
+	/*border: 1px solid grey;*/
+}
+
+/* END DESCRIPTON SECTION */
+
+/* START BOX-LIST */
+
+.box {
+	width: 60%;
+	margin: auto;
+	margin-bottom: 20px;
+	height: 172px;
+	background-color: white;
+	padding: 10px;
+	display: flex;
+	border-radius: 8px;
+	overflow: hidden;
+
+}
+
+.box:hover {
+	box-shadow: 0 0 2px grey
+}
+
+
+.box a {
+	color:  #0000FF;
+}
+.box a:hover{
+
+	text-decoration: underline;
+}
+
+.box-img {
+	width: 25%;
+	height: 100%;
+	float: left;
+	overflow: hidden;
+
+	
+}
+
+.box-info {
+	width: 75%;
+	height: 100%;
+	
+	text-align: left;
+	padding: 15px;
+	overflow: hidden;
+}
+
+/* PAGINATION */ 
+
+.pagination {
+	margin-top: 100px;
+}
+.pagination a {
+	padding: 8px 16px;
+	border-radius: 4px;
+	color: black;
+}
+
+.pagination a.active {
+	color: white;
+	background-color: #392469
+}
+
+.pagination a:hover:not(.active) {
+	background-color: #392469;
+	color: white
+}
+/* END PAGINATION */
+
+.quiz-search {
+	margin: 100px auto;
+	
+	text-align: left;
+}
+
+.search-field {
+	margin: 20px auto;
+	text-align: center;
+	display: inline-block;
+	width: 100%;
+
+}
+
+.search-field input[type="text"] {
+	height: 50px;
+	width: 50%;
+	border-radius: 7px;
+	border: none;
+	padding: 18px;
+	outline: none;
+	font-size: small;
+	box-shadow: 0px 0px 1px 0px grey;
+}
+
+.search-field button {
+	height: 100%;
+    padding: 17px 20px;
+    background-color: #3C246D;
+    color: white;
+    font-size: small;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none
+
+
+}
+
+.search-field input[type="text"]:focus {
+	box-shadow: 0px 0px 4px 0px grey;
+}
+
+.search-field button:hover {
+	box-shadow: 0px 0px 4px 0px grey;
+}
+
+.search-result {
+	width: 50%;
+	margin: 20px auto;
+	
+}
+
+.search-details {
+
+	width: 50%;
+	margin: 20px auto;
+	display: flex;
+	padding: 10px;
+	padding-left: 0
+}
+
+.search-details .search-img {
+	width: 25%
+} 
+
+.search-details .search-intro {
+	width: 80%;
+	text-align: left;
+	padding: 15px;
+	padding-top: 6px;
+	overflow: hidden;
+}
+
+
+/* Quiz Details */ 
+
+.quiz-area {
+	width: 60%;
+	margin: 20px auto;
+	padding: 30px;
+	border-radius: 8px;
+	box-shadow: 0 0 3px #808080ad
+}
+
+.quiz-area:hover {
+	
+}
+
+.quiz-box {
+	text-align: center
+}
+
+.question {
+	text-align: left;
+    padding-top: 16px;
+    padding-left: 21px;
+    padding-bottom: 8px;
+}
+.quiz-box input {
+	position: absolute;
+	left: -9999px
+}
+
+.quiz-box label {
+	width: 35%;	
+	 display: inline-block;
+	 position: relative;
+	 text-align: center;
+	 margin: 20px;
+	 padding: 7px 15px;
+	 border: 0px solid #54246B;
+	 border-radius: 4px;
+	 color: #000000ad;
+	 box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+	 white-space: nowrap;
+	 cursor: pointer;
+	 user-select: none;
+	 transition: background-color .2s, box-shadow .2s;
+}
+
+.quiz-box label:hover {
+	background-color: rgba(0, 0, 0, .2)
+}
+
+
+input:checked + label {
+  background-color: #B7A8C6
+}
+
+input:checked + label.true {
+	background-color: #33a7445c
+}
+
+input:checked + label.false {
+	background-color: #dc35455c
+}
+
+input:checked + label:hover  {
+	background-color: #B7A8C6
+}
+
+/* 
+
+default state : #B7A8C6 
+Green success : #33a7445c
+Red fails : #dc35455c
+
+*/
+
+.true {
+	background-color: #33a7445c
+}
+
+.false {
+	background-color: #dc35455c
+}
+
+.quiz-area button {
+	width: 100px;
+    height: 33px;
+    cursor: pointer;
+    color: white;
+    background-color: #3C246D;
+    font-size: small;
+    border-radius: 4px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+    border: none;
+}
+
+.quiz-area button:hover {
+	box-shadow: 0px 0px 4px 0px grey;
+}
+
+/* End Quiz Details */
+
+
+/* ///////////////////////////////////////// */
+
+
+
+
+
+
+
+
+
+/* smartphones portrait */
+
+@media (max-width: 479px) {
+	section .intro h3 {
+		font-size: x-large;
+	}
+	section .intro-title {
+		font-size: xx-large;
+	}
+
+}	
+
+
+/* smartphone */
+
+@media (min-width: 480px) and (max-width: 767px) {
+	/* header */
+	.header-background {
+		height: 250px;
+		position: fixed;
+	    top: 0;
+	    box-shadow: 0 0 5px 1px grey;
+	}
+	.container {
+		width: 95%;
+
+	}
+
+	.navbar input[type="text"] {
+		display: none
+	}
+	header .container-logo img {
+		width: 100px;
+		left: 10px
+	}
+
+	.navbar img {
+		width: 90px;
+		margin: 6px;
+		position: inherit;1
+	}
+
+	.intro-domain {
+		float: none;
+		margin: 70px 0px 10px 0px
+	}
+
+	.intro-domain-description {
+		width: 90%;
+		margin: 27px auto;
+    	margin-bottom: 50px;
+	}
+
+	.box {
+		width: 100%;
+		height: 140px
+	}
+
+	.box-img {
+		width: auto
+	}
+
+	.text-inside h4 {
+		display: none;
+		font-size: small;
+	}
+
+	.text-inside h2 {
+		font-size: large;
+	}
+
+	.search-input {
+		width: 90%;
+		margin:35px auto;
+
+	}
+
+	.search-input input[type="text"] {
+		height: 35px;
+
+	}
+
+	/* End header */
+	section .intro-title {
+		width: auto
+	}
+
+	section .intro-description {
+		width: auto;
+	}
+
+	section .menu-list ul li {
+		padding: 5px;
+		margin-right: auto;
+		font-size: small;
+	}
+
+	/* Section */
+	.cards .card {
+		float: none;
+		display: inline-block;
+		width: 180px
+	}
+
+	.card .card-title {
+		font-size: small;
+	}
+
+	.button-viewmore {
+		padding: 10px;
+		font-size: small;
+	}
+	footer {
+		font-size: x-small;
+	}
+
+	.quiz-search {
+		text-align: center;
+	}
+
+	.search-field input[type="text"] {
+		height: 30px
+	}
+
+	.search-field button {
+		padding: 10px 20px
+	}
+
+	.search-result {
+		width: 85%
+	}
+
+	.search-details {
+		width: auto;
+		height: 126px
+
+	}
+
+	.search-details .search-img {
+		height: 100%
+	}
+
+	.search-details .search-intro {
+		width: 75%;
+		padding-top: 2px;
+	}
+
+	.quiz-area {
+		width: auto;
+		padding: 7px;
+		padding-bottom: 15px
+	}
+
+	.question h2 {
+		font-size: smaller;
+	}
+
+	.quiz-box label {
+		width: auto;
+		padding: 7px 50px;
+		font-size: small;
+		max-width: 560px;
+		white-space:normal;
+		text-align: left
+	}
+
+	.quiz-area button {
+		width: 70px;
+		height: 25px;
+		font-size: x-small;
+	}
+
+
+
+
+	/* End section */
+}
+
+
+/* Tablets and mini laptop */
+@media (min-width: 768px) and (max-width: 991px) {
+
+	.header-background {
+		height: 300px
+	}
+
+	.logo {
+		left: 20px
+	}
+	.text-inside h4 {
+		font-size: small;
+	}
+	.text-inside h2 {
+		font-size: x-large;
+	}
+	.search-input input[type="text"] {
+		width: 90%;
+		height: 33px;
+		font-size: smaller;
+	}
+	section .intro-domain {
+		float: none;
+	    margin: 100px 0px 10px 0px;
+    }
+
+    section .intro-domain-description {
+    	width: 90%
+    }
+
+    .box {
+    	width: 90%
+    }
+
+	section .intro-description {
+		width: 75%
+	}
+
+	.cards {
+		width: 95%
+	}
+
+	.cards .card {
+		width: 200px
+	}
+
+	section .menu-list ul {
+		font-size: smaller;
+		width: 80%
+	}
+
+	.card .card-title {
+		font-size: smaller;
+	}
+
+	.button-viewmore {
+		padding: 11px;
+		font-size: small;
+	}
+
+	footer {
+		font-size: x-small
+	}
+
+
+	.quiz-search {
+		text-align: center
+	}
+
+	.search-field input[type="text"] {
+		height: 40px;
+	}
+
+	.search-field button {
+		padding: 10px 20px
+	}
+
+	.search-details {
+		width: 80%
+	}
+
+	.quiz-area {
+		width: 95%
+	}
+
+	.quiz-box label {
+		width: auto;
+		font-size: small;
+		padding: 7px 30px
+	}
+
+	.quiz-area button {
+		width: 89px;
+		height: 28px;
+	}
+
+}
+
+
+
+
+/* Desktop / laptop */ 
+@media (min-width: 992px) and (max-width: 1329px) {
+	.logo {
+		left: 20px
+	}
+
+	section .intro-domain {
+		float: none;
+	    margin: 100px 0px 10px 0px;
+    }
+    section .intro-domain-description {
+    	width: 90%
+    }
+
+    .box {
+    	width: 80%
+    }
+
+    .quiz-search {
+    	margin: 100px 10px 100px 10px;
+    }
+
+    .quiz-area {
+    	width: 90%;
+
+    }
+
+
+}
+
+/* wide screen */ 
+@media (min-width: 1330px) {
+	.intro-domain-description {
+	margin: 120px auto 70px auto;
+}
